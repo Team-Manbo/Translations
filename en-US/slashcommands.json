@@ -1,0 +1,32 @@
+{
+  "general": {
+    "ping": {
+      "name_localizations": {
+        "en-US": "ping"
+      },
+      "description_localizations": {
+        "en-US": "Check the bot's latency"
+      }
+    }
+  },
+  "config": {
+    "prefix": {
+      "name_localizations": {
+        "en-US": "prefix"
+      },
+      "description_localizations": {
+        "en-US": "Set the bot's prefix"
+      },
+      "options": [
+        {
+          "name_localizations": {
+            "en-US": "prefix"
+          },
+          "description_localizations": {
+            "en-US": "A new prefix to set"
+          }
+        }
+      ]
+    }
+  }
+}

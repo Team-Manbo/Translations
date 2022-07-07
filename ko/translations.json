@@ -1,0 +1,10 @@
+{
+  "timeUtil": {
+    "year": "년",
+    "week": "주",
+    "day": "일",
+    "hour": "시간",
+    "minute": "분",
+    "second": "초"
+  }
+}

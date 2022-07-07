@@ -1,0 +1,40 @@
+{
+  "general": {
+    "ping": {
+      "name": "핑",
+      "description": "봇의 핑 확인",
+      "aliases": [
+        "핑",
+        "퐁"
+      ],
+      "usage": "",
+      "examples": [
+        "핑"
+      ]
+    },
+    "help": {
+      "name": "도움말",
+      "description": "봇의 도움말 표시",
+      "aliases": [
+        "도움",
+        "도움말",
+        "메뉴"
+      ],
+      "usage": "[카테고리 | 커맨드]",
+      "examples": [
+        "도움말",
+        "도움말 관리",
+        "도움말 차단"
+      ],
+      "etc": {
+        "invalid_category": "존재하지 않는 카테고리입니다!"
+      }
+    }
+  },
+  "dev": {
+    "i18n": {
+      "name": "i18n",
+      "description": "i18n 리로드"
+    }
+  }
+}

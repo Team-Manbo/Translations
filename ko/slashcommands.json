@@ -1,0 +1,32 @@
+{
+  "general": {
+    "ping": {
+      "name_localizations": {
+        "ko": "핑"
+      },
+      "description_localizations": {
+        "ko": "봇의 핑 확인하기"
+      }
+    }
+  },
+  "config": {
+    "prefix": {
+      "name_localizations": {
+        "ko": "접두사"
+      },
+      "description_localizations": {
+        "ko": "봇의 접두사 설정"
+      },
+      "options": [
+        {
+          "name_localizations": {
+            "ko": "접두사"
+          },
+          "description_localizations": {
+            "ko": "봇에 사용될 새로운 접두사"
+          }
+        }
+      ]
+    }
+  }
+}
