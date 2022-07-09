@@ -1,0 +1,29 @@
+{
+  "music": {
+    "autoplay": "AutoPlay",
+    "not_in_vc": "**You need to be in the voice channel!**",
+    "no_player": "**There is no player alive in this guild!**",
+    "not_in_same_vc": "**You need to be in the same voice channel as me!**",
+    "no_songs_in_queue": "**There are no songs left in the queue!**"
+  },
+  "general": {
+    "not_executor": "**You are not the executor of this command!**"
+  },
+  "no_reason": "No reason given",
+  "timeUtil": {
+    "year": "year",
+    "week": "week",
+    "day": "day",
+    "hour": "hour",
+    "minute": "minute",
+    "second": "second"
+  },
+  "timeunit": "**Time Units**: `year` `week` `day` `hour` `minute` `second`\n> `2y5w3d1h29m35s`\n> `5m39s` ( `5minute39second` )\n> `2y` ( `104week` `104weeks` )\n> `5second` ( `5seconds` `5s`)",
+  "automod": {
+    "phishing_link_detected": "[AutoMod] Phishing Link Detected",
+    "kicked_phishing_user": "[`AutoMod`] **Kicked {{user}} for sending phishing link**",
+    "cannot_delete_link_message": "**Failed to delete {{user}}'s invitation message...**\n> Please check my `Manage Message` permission!",
+    "cannot_delete_phishing_message": "**Failed to delete {{user}}'s phishing message...**\n> Please check my `Manage Message` permission!",
+    "cannot_delete_invite_message": "**Failed to delete {{user}}'s discord invitation message...**\n> Please check my `Manage Message` permission!"
+  }
+}
