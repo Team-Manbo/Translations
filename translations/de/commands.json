@@ -1,0 +1,419 @@
+{
+  "general": {
+    "ping": {
+      "name": "ping",
+      "description": "Check the bot's latency",
+      "category": "General",
+      "detailedHelp": "Cehck the bot's latency",
+      "aliases": [
+        "latency"
+      ]
+    },
+    "help": {
+      "name": "help",
+      "description": "Displays a list of commands or info about a specific command",
+      "category": "General",
+      "usage": "[category | command]",
+      "detailedUsage": [
+        [
+          "category",
+          "A category to see each commands"
+        ],
+        [
+          "command",
+          "A command to see its details"
+        ]
+      ],
+      "detailedHelp": "use this command to get help about all commands and categories! You can just use the command help to show the main page of the bot, which shows you total categories of the bot.",
+      "examples": [
+        "help",
+        "help moderation",
+        "help ban"
+      ],
+      "etc": {
+        "title": "Command List",
+        "invalid_category": "The category doesnt exist!",
+        "server_prefix": "This guild's prefix is `{{prefix}}`"
+      }
+    }
+  },
+  "dev": {
+    "i18n": {
+      "name": "i18n",
+      "description": "Reload i18n resources",
+      "category": "Dev"
+    }
+  },
+  "music": {
+    "play": {
+      "name": "play",
+      "description": "Play a music",
+      "category": "Music",
+      "detailedHelp": "You can play a song via Youtube Music, SoundCloud, Spotify, etc! You can also create Liked Songs playlist and add whenever you want!",
+      "aliases": [
+        "p"
+      ],
+      "usage": "[url | song name]",
+      "examples": [
+        "play https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "play The Hobbit"
+      ],
+      "detailedUsage": [
+        [
+          "URL",
+          "URL of the song, supports youtube, spotify and soundcloud"
+        ],
+        [
+          "name",
+          "name of the song. you can choose via dropdown menu."
+        ]
+      ],
+      "etc": {
+        "no_vc": "**You need to be in the voice channel to play the music!**",
+        "no_permission": "**I am lacking `Speak` or `Connect` permissions!**",
+        "cannot_join": "**I cannot join your voice channel!**\n> *Please check if voice channel is full or I have the permissions to join it.*",
+        "cancel": "Cancel",
+        "select_song": "**Hey {{user}}, select a song or use `Cancel` button to cancel it!**",
+        "error_while_playing": "**An error occurred while playing the music!**\n> *If this message keep appears, please report it to the developer.*",
+        "no_match": "**No match found for `{{search}}`!**",
+        "playlist_loaded": "**Added playlist `{{name}}` to the queue!**\n\n> **{{name}}** • `{{length}}` **Song{{s}}** • `{{duration}}`",
+        "track_loaded": "**Added a song to the queue!**\n\n> [{{name}}]({{uri}}) • `{{duration}}`",
+        "load_failed": "**Failed to load the music!**\n> *Please check if the link is correct or if the music is not available.*",
+        "music_chosen": "**{{user}} has chosen the music!**"
+      }
+    },
+    "stop": {
+      "name": "stop",
+      "description": "Stop the music",
+      "category": "Music",
+      "aliases": [
+        "leave"
+      ]
+    },
+    "skip": {
+      "name": "skip",
+      "description": "Skip the music",
+      "category": "Music",
+      "aliases": [
+        "s"
+      ],
+      "etc": {
+        "provide_valid_number": "provide valid number to skip!",
+        "song_skipped": "Song Skipped",
+        "invalid_number": "cannot skip {{number}} songs!",
+        "skipped_song": "Skipped {{number}} songs!"
+      }
+    }
+  },
+  "moderation": {
+    "ban": {
+      "name": "ban",
+      "description": "Ban member",
+      "category": "Moderation",
+      "usage": "<@user | userId> [reason]",
+      "detailedUsage": [
+        [
+          "user",
+          "user to timeout"
+        ],
+        [
+          "reason",
+          "a reason for user to be banned"
+        ]
+      ],
+      "examples": [
+        "ban @Scammer Imagine being hacked.",
+        "ban 123456789123456789 slur pictures in dm"
+      ],
+      "etc": {
+        "provide_target": "**Provide a user to ban!**",
+        "invalid_target": "**Invalid user!**",
+        "self_ban": "**Why are you trying to ban yourself??**",
+        "higher_role": "**The user has same or higher role than you!**",
+        "higher_role_2": "**The user has same or higher role than me!**"
+      }
+    },
+    "tempban": {
+      "name": "tempban",
+      "description": "Temporarily Ban member",
+      "category": "Moderation",
+      "usage": "<@user | userId> <time> [reason]",
+      "detailedUsage": [
+        [
+          "user",
+          "user to timeout"
+        ],
+        [
+          "time",
+          "duration for user to be banned"
+        ],
+        [
+          "reason",
+          "a reason for user to be banned"
+        ]
+      ],
+      "examples": [
+        "tempban @Hacked-Account 7d Security ban",
+        "tempban 123456789123456789 3d sexual harassment"
+      ],
+      "etc": {
+        "provide_target": "**Provide a user to ban!**",
+        "invalid_target": "**Invalid user!**",
+        "provide_time": "**Provide a time to tempban user!**",
+        "invalid_time": "**Provide time to timeout!**",
+        "self_ban": "**Why are you trying to ban yourself??**",
+        "higher_role": "**The user has same or higher role than you!**",
+        "higher_role_2": "**The user has same or higher role than me!**"
+      }
+    },
+    "mute": {
+      "name": "mute",
+      "description": "Mute member",
+      "category": "Moderation",
+      "usage": "<@user | userId> [time] [reason]",
+      "detailedUsage": [
+        [
+          "user",
+          "user to mute"
+        ],
+        [
+          "time",
+          "duration to mute user"
+        ],
+        [
+          "reason",
+          "a reason for user to be muted"
+        ]
+      ],
+      "examples": [
+        "mute @spammer 3h stop spamming",
+        "mute 1234567812345678 perm mute"
+      ]
+    },
+    "timeout": {
+      "name": "timeout",
+      "description": "Timeout member",
+      "category": "Moderation",
+      "usage": "<@user | userId> <time> [reason]",
+      "detailedUsage": [
+        [
+          "user",
+          "user to timeout"
+        ],
+        [
+          "time",
+          "duration to timeout user"
+        ],
+        [
+          "reason",
+          "a reason for user to be timeouted"
+        ]
+      ],
+      "examples": [
+        "timeout @Spammer 2h Stop Spamming",
+        "timeout 123456789123456789 3d Too much harassment"
+      ],
+      "etc": {
+        "provide_target": "**Provide a user to timeout!**",
+        "invalid_target": "**Invalid user!**",
+        "provide_time": "**Provide time to timeout!**",
+        "self_timeout": "**Why are you trying to ban yourself??**",
+        "higher_role": "**The user has same or higher role than you!**",
+        "higher_role_2": "**The user has same or higher role than me!**",
+        "already_timeouted": "**This user has already been timeouted!**",
+        "invalid_time": "**Provide a valid time!**",
+        "time_range": "**You can timeout between `5 seconds` to `28 days`!**"
+      }
+    },
+    "untimeout": {
+      "name": "untimeout",
+      "description": "Un-Timeout Member",
+      "category": "Moderation",
+      "usage": "<@user | userId> [reason]",
+      "detailedUsage": [
+        [
+          "user",
+          "user to un-timeout"
+        ],
+        [
+          "reason",
+          "a reason for user to be un-timeouted"
+        ]
+      ],
+      "examples": [
+        "untimeout @Spammer Will forgive",
+        "untimeout 123456789123456789 Requested un-timeout, accepted"
+      ],
+      "etc": {
+        "provide_target": "**Provide user to un-timeout!**",
+        "invalid_target": "**Invalid user!**",
+        "self_timeout": "**You cannot un-timeout yourself!**",
+        "higher_role": "**The user has same or higher role than you!**",
+        "higher_role_2": "**The user has same or higher role than me!**",
+        "already_untimeouted": "**This user is not timeouted!**"
+      }
+    },
+    "slowmode": {
+      "name": "slowmode",
+      "description": "Set slowmode for channel",
+      "category": "Moderation",
+      "detailedHelp": "Set a slowmode for channel! You can either use `0` or `off` to reset slowmode.",
+      "usage": "<off | time>",
+      "detailedUsage": [
+        [
+          "time",
+          "word `off` or time unit to set channel's slow"
+        ]
+      ],
+      "examples": [
+        "slowmode off",
+        "slowmode 3m",
+        "slowmode 6h"
+      ],
+      "aliases": [
+        "slow"
+      ],
+      "etc": {
+        "current_slow": "**Current slowmode for this channel is `{{slow}}`!**",
+        "off": "off",
+        "reset_ratelimit": "**Reset slowmode for this channel to `0`!**",
+        "invalid_time": "**Invalid time!**",
+        "invalid_time_range": "**Duration cannot be lower than `0` or higher than `6hours`!**",
+        "set_ratelimit": "**Slowmode for this channel set to `{{time}}`!**"
+      }
+    }
+  },
+  "statistic": {
+    "fastbuilder": {
+      "name": "fastbuilder",
+      "description": "Get statistics of McplayHD.net Fastbuilder",
+      "category": "Statistic",
+      "aliases": [
+        "fb"
+      ],
+      "usage": "[mode] <ign | rank>",
+      "examples": [
+        "fastbuilder normal #1",
+        "fb inclined Manbo",
+        "fb McPlayHD"
+      ],
+      "etc": {
+        "no_stats": "**This player has no stats in this mode!**",
+        "no_results": "**No results found!**"
+      }
+    }
+  },
+  "image": {
+    "neko": {
+      "name": "neko",
+      "description": "Generate eko images or gif",
+      "category": "Image",
+      "detailedHelp": "Generate random neko image! All neko images are from `waifu.pics API`.",
+      "examples": [
+        "neko"
+      ]
+    },
+    "highfive": {
+      "name": "highfive",
+      "description": "Generate highfive images or gif",
+      "category": "Image",
+      "detailedHelp": "Generate random highfive image! All images are from `waifu.pics API`.",
+      "examples": [
+        "highfive"
+      ]
+    },
+    "pat": {
+      "name": "pat",
+      "description": "Generate patting images or gif",
+      "category": "Image",
+      "detailedHelp": "Generate random patting image! All images are from `waifu.pics API`.",
+      "examples": [
+        "pat"
+      ]
+    },
+    "meme": {
+      "name": "meme",
+      "description": "Generate meme imaged",
+      "category": "Image",
+      "detailedHelp": "Generate random meme image! All images are from `Reddit`.",
+      "examples": [
+        "meme"
+      ]
+    },
+    "hug": {
+      "name": "hug",
+      "description": "Generate hugging images or gif",
+      "category": "Image",
+      "detailedHelp": "Generate random hug image! All images are from `waifu.pics API`.",
+      "usage": "<@user>",
+      "detailedUsage": [
+        [
+          "user",
+          "A user to hug"
+        ]
+      ],
+      "examples": [
+        "hug @Snorlax",
+        "hug @Manbo"
+      ],
+      "etc": {
+        "no_args": "**You need to provide a user to hug!**",
+        "no_target": "**The user does not exist!**",
+        "self": "**Why are you trying to hug yourself?** :rofl:",
+        "bot": "**Imagine hugging a bot not a user...** :sob",
+        "hug": "{{target}}, you have been **hugged** by {{member}}."
+      }
+    },
+    "kiss": {
+      "name": "kiss",
+      "description": "Generate kissing images or gif",
+      "category": "Image",
+      "detailedHelp": "Generate random kissing image! All images are from `waifu.pics API`.",
+      "usage": "<@user>",
+      "detailedUsage": [
+        [
+          "user",
+          "A user to kiss"
+        ]
+      ],
+      "examples": [
+        "kiss @Snorlax",
+        "kiss @Manbo"
+      ],
+      "etc": {
+        "no_args": "**You need to provide a user to kiss!**",
+        "no_target": "**The user does not exist!**",
+        "self": "**Why are you trying to kiss yourself?** :rofl:",
+        "bot": "**Imagine kissing a bot not a user...** :sob",
+        "kiss": "{{target}}, you have been **kissed** by {{member}}."
+      }
+    }
+  },
+  "config": {
+    "prefix": {
+      "name": "prefix",
+      "description": "Set the bot's prefix",
+      "category": "Config",
+      "usage": "[prefix]",
+      "detailedHelp": "Set the bot's prefix. You can't set prefix which is longer than 10 chraracters.",
+      "detailedUsage": [
+        [
+          "prefix",
+          "A new prefix to set"
+        ]
+      ],
+      "aliases": [
+        "setprefix"
+      ],
+      "examples": [
+        "prefix !",
+        "prefix ?"
+      ],
+      "etc": {
+        "current_prefix": "**Current prefix is** `{{prefix}}`.",
+        "max_length": "**You can't set prefix longer than 10 characters!**",
+        "prefix_changed": "**Prefix changed to** `{{prefix}}`."
+      }
+    }
+  }
+}
