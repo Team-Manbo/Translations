@@ -1,0 +1,13 @@
+{
+  "music": {
+    "cancel": {
+      "can_cancel_after": "**User who didnt execute the command can cancel it after `{{time}}` seconds!**",
+      "canceled": "**{{user}} has canceled it!**"
+    }
+  },
+  "like": {
+    "added": "**Successfully added to `Liked Songs` playlist!**",
+    "created": "**Created a new playlist - `Liked Songs`!**",
+    "removed": "**Successfully removed from `Liked Songs` playlist!**"
+  }
+}
