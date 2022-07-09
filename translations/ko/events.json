@@ -1,0 +1,31 @@
+{
+  "onMessageCreate": {
+    "MISSING_PERMISSIONS": "봇의 권한이 부족합니다!",
+    "disabled": "this command is disabled",
+    "nsfw": "this command is nsfw channel only",
+    "missing_basic_perms": "I am missing basic permissions, give me link_embed and use_external_emotes bozo!",
+    "missing_bot_perms": "I am missing bot permissions, give me this permissions bozo!",
+    "missing_user_perms": "You are missing permissions bozo! you needa have this!"
+  },
+  "onInteractionCreate": {
+    "MISSING_PERMISSIONS": "I am missing permissions!",
+    "disabled": "this command is disabled",
+    "nsfw": "this command is nsfw channel only",
+    "missing_basic_perms": "I am missing basic permissions, give me link_embed and use_external_emotes bozo!",
+    "missing_bot_perms": "I am missing bot permissions, give me this permissions bozo!",
+    "missing_user_perms": "You are missing permissions bozo! you needa have this!"
+  },
+  "onReady": {
+    "trackStart": {
+      "nowplaying": "**Now playing**",
+      "like_song": "Liked Songs"
+    },
+    "queueEnd": {
+      "added": "**Added song to queue**",
+      "no_song_in_queue": "**No songs left in the queue**!",
+      "inactivity": "**Due to inactivity, I left the voice channel!**",
+      "please_vote": "**Have you enjoyed your music?**\n**If you vote for me, it would mean a lot to us!**",
+      "click_to_vote": "Click here to vote!"
+    }
+  }
+}
